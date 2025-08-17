@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class HolaMundo {
 	
 	public static void main(String[] args) {
-		int num1;
+		int num1, edad;
 		int num2;
 		boolean flag = true;
 		float datoF = 55.3f;
 		double precio = 44.5;
         int resultado;
 		String nombre = "hola mundo";
+		String apellido;
 		
 		Scanner captura = new Scanner(System.in);	
 		
