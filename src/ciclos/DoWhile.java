@@ -11,18 +11,23 @@ public class DoWhile {
 	public static void main(String[] args)
 	{
 		Scanner stdIn = new Scanner(System.in);
-		double longitud, anchura; // room dimensions
-		double espacioPiso = 0; // house's total floor space
-		char respuesta; // user's y/n response
+		double longitud, anchura; // Dimensiones de una habitación.
+		double espacioPiso = 0; //Acumulador del área total (inicialmente 0).
+		char respuesta; 
+		
 		do
 		{
 			System.out.print("Introduzca la longitud: ");
 			longitud = stdIn.nextDouble();
+			
 			System.out.print("Introduzca la anchura: ");
 			anchura = stdIn.nextDouble();
+			
 			espacioPiso += longitud * anchura;
+			
 			System.out.print("¿Otra recámara (s/n): ");
 			respuesta = stdIn.next().charAt(0);
+			
 		} while (respuesta == 's' || respuesta == 'S');
 		
 		System.out.println("El espacio total del piso es " + espacioPiso);

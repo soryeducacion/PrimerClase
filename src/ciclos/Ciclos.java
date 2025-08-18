@@ -6,7 +6,8 @@ public class Ciclos {
 		// TODO Auto-generated method stub
 		// CICLO WHILE
 		
-		int i = 1; // Se declara la variable en i=1 para que se cumpla la condicion y entre al arreglo.
+		int i = 1; // Se declara la variable en i=1 para que se cumpla la 
+		//condicion y entre al arreglo.
 		//while (condición) { sintaxis
 		while (i <= 5) {
 		    System.out.println("Número: " + i);
@@ -23,7 +24,8 @@ public class Ciclos {
 		}
 		
 		/*Ciclo do-while
-		  Es similar al while, pero siempre ejecuta al menos una vez el bloque de código, ya que la condición se evalúa después.
+		  Es similar al while, pero siempre ejecuta al menos una vez 
+		  el bloque de código, ya que la condición se evalúa después.
 		  sintaxis 
 		  do {
 			    // Código que se repite
