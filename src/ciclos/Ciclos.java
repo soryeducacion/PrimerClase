@@ -10,6 +10,7 @@ public class Ciclos {
 		//while (condición) { sintaxis
 		while (i <= 5) {
 		    System.out.println("Número: " + i);
+		    int n;
 		    i++;
 		}
 		
