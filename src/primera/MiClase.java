@@ -22,7 +22,9 @@ public class MiClase {
     public static void main(String[] args) {
        // MiClase miClase = new MiClase();
 
-        saludar();
-       
+    	 System.out.println("Cantidad de argumentos: " + args.length);
+         for (int i = 0; i < args.length; i++) {
+             System.out.println("Argumento " + i + ": " + args[i]);
+         }
     }
 }
