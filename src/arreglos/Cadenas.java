@@ -12,6 +12,8 @@ public class Cadenas {
 		
 		Scanner captura = new Scanner(System.in);
 		String nombre;
+		float ii = captura.nextFloat();
+		System.out.println(ii);
 		for(int i = 0; i< nombres.length; i++) {
 			System.out.println("Dame el nombre "+ i );
 			nombre = captura.nextLine();

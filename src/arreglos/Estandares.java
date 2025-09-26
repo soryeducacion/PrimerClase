@@ -9,6 +9,7 @@ public class Estandares {
 		
 		long[] telefonos;
 		Scanner captura = new Scanner(System.in);
+		
 		System.out.println("Cuantos numeros quieres almacenar? ");
 		int sizeArray = captura.nextInt();
 		telefonos = new long[sizeArray]; 
@@ -24,10 +25,6 @@ public class Estandares {
 			System.out.println("El numero de tel es: " +telefonos[i]);
 		}
 		
-		
-		
-		
-
 	}
 
 }
