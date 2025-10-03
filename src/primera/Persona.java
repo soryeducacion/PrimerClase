@@ -1,5 +1,7 @@
 package primera;
 
+import docentes.Docentes;
+
 public class Persona {
 	private int edad;
 	private String nombre;
@@ -55,18 +57,10 @@ public class Persona {
 		return resultado; 
 	}
 
-    public static void main(String[] args) {
-    	Persona persona = new Persona();
-        
-    	persona.caminar();
-    	persona.dormir(8,"Soraya");
-    	double res = persona.comer(2,"Hola");
-    	
-    	Persona persona_con = new Persona(8,"Soraya","Lopez","01-10-1988");
-    	
-    	System.out.println(persona_con.fecha_nacimiento);
-    	
-    	Alumno alumno = new Alumno();
+    public static void main(String[] args) {	
+    	Docentes procesos_mate = new Docentes();
+    	procesos_mate.guardarMateria( new Docentes(602800,"Lenguaje Java","Programación"));
+    	procesos_mate.getMateria();    	
     	
     }
 }
