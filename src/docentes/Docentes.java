@@ -18,8 +18,9 @@ public class Docentes extends Persona {
 		this.parescolar = parescolar;
 	}
 	
-	public Docentes (String materia, String parescolar,int edad, String nombre, String apellido, String fecha_nacimiento){
+	public Docentes (long nomina, String materia, String parescolar,int edad, String nombre, String apellido, String fecha_nacimiento){
 		super(edad,nombre,apellido,fecha_nacimiento);
+		this.nomina = nomina;
 		this.materia = materia;
 		this.parescolar = parescolar;		
 	}
@@ -66,6 +67,18 @@ public class Docentes extends Persona {
     	 System.out.println("Listado de Materias");
     	for (Docentes lista : lista_materias){
     		System.out.println(lista.datosDocente());
+    	}
+    }
+    
+    public void altaDocentes(Persona docente) {
+    	docentes.add(docente);
+    }
+    
+
+    public void listadoDocente() {
+    	 System.out.println("Listado de Docentes");
+    	for (Persona lista : docentes){
+    		System.out.println("Docente: " +lista.getNombre());
     	}
     }
 	
