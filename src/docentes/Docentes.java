@@ -70,16 +70,6 @@ public class Docentes extends Persona {
     	}
     }
     
-    public void altaDocentes(Persona docente) {
-    	docentes.add(docente);
-    }
-    
-
-    public void listadoDocente() {
-    	 System.out.println("Listado de Docentes");
-    	for (Persona lista : docentes){
-    		System.out.println("Docente: " +lista.getNombre());
-    	}
-    }
+ 
 	
 }

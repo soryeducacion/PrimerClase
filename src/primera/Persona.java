@@ -62,8 +62,7 @@ public class Persona {
     	//procesos_mate.guardarMateria( new Docentes(602800,"Lenguaje Java","Programación"));
     	//procesos_mate.getMaterias(); 
     	
-    	procesos_mate.altaDocentes(new Docentes(602801,"Mate","",40,"Carlo Daniel","Estrada Dominguez","29/09/1985"));
-    	procesos_mate.listadoDocente();
+    	
     	
     }
 }
