@@ -42,6 +42,13 @@ public class Persona {
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+	
+	 public String getAtributos(){
+	      return "\n Nombre " + this.nombre 
+	               + "\n Apellido " + this.apellido
+	               + "\n Edad " + this.edad
+	               + "\n Fecha Nac " + this.fecha_nacimiento;
+	    }
 
 	protected void caminar() {
 		System.out.println("Esta caminando...");

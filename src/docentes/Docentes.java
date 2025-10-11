@@ -55,6 +55,14 @@ public class Docentes extends Persona {
 		return "Materia: " + getMateria() + " Parescolar: " + getParescolar();
 	}
 	
+	 @Override
+    public String getAtributos(){
+        return super.getAtributos() 
+                + "\n Materia " + this.materia 
+                + "\n Parescolar " + this.parescolar
+                + "\n Nomina " + this.nomina;
+    }
+	
 	public void altasDocentes(Persona persona) {
 		
 	}
@@ -78,7 +86,7 @@ public class Docentes extends Persona {
     public void listadoDocente() {
     	 System.out.println("Listado de Docentes");
     	for (Persona lista : docentes){
-    		System.out.println("Docente: " +lista.getApellido());
+    		System.out.println(lista.getAtributos());
     	}
     }
 	
