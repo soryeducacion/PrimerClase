@@ -67,14 +67,36 @@ public class Docentes extends Persona {
 		
 	}
 	
+	
 	public void guardarMateria(Docentes materias) {
-		lista_materias.add(materias);
+		//System.out.println(lista_materias.equals(materias.nomina));
+		
+		boolean mate = buscar_materia(materias.nomina,materias.materia);
+		
+		if(mate) {
+			System.out.println("La materia ya esta registrada");
+		}else {
+			lista_materias.add(materias);
+		}
+		
+	}
+	
+	public boolean buscar_materia(long nomina, String materia) {
+		boolean buscar_nom = false;
+		for(Docentes lista : lista_materias) {
+			if(lista.nomina== nomina && lista.getMateria() == materia) {
+				buscar_nom = true;
+				break;
+			}
+			
+		}
+		return buscar_nom;
 	}
 	
     public void getMaterias() {
     	 System.out.println("Listado de Materias");
     	for (Docentes lista : lista_materias){
-    		System.out.println(lista.datosDocente());
+    		System.out.println(lista.getAtributos());
     	}
     }
     
