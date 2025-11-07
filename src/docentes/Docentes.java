@@ -79,8 +79,10 @@ public class Docentes extends Persona {
 			lista_materias.add(materias);
 		}
 		
+		
 	}
 	
+
 	public boolean buscar_materia(long nomina, String materia) {
 		boolean buscar_nom = false;
 		for(Docentes lista : lista_materias) {
@@ -111,5 +113,17 @@ public class Docentes extends Persona {
     		System.out.println(lista.getAtributos());
     	}
     }
+    
+    public void eliminarMaterias(String materia) {	
+    	for(int x = 0 ; x <= lista_materias.size(); x++) {
+    		 if (lista_materias.get(x).getMateria().equals(materia)) {     		
+    			 lista_materias.remove(x);      
+                 break;
+             }	 
+    	}
+    	
+    }
+    
+
 	
 }

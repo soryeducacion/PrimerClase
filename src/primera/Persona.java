@@ -102,19 +102,39 @@ public class Persona {
     		 * */
     		switch (op) {
 				case 1: {
+					boolean op_materias = true;
+					int salir_materias = 1;
 					System.out.println("Nomina");
 					nomina = sc.nextLong();
-					System.out.println("Materia: ");
-					materia = sc.nextLine();
-					System.out.println("Parescolar");
-					parescolar = sc.nextLine();
+					while(op_materias) {
+						
+						System.out.println("Materia: ");
+						materia = sc.next();
+						System.out.println("Parescolar");
+						parescolar = sc.next();
 					
-					procesos_mate.guardarMateria( new Docentes(nomina,materia,parescolar));
-					
+						procesos_mate.guardarMateria( new Docentes(nomina,materia,parescolar));
+						System.out.println("Quieres serguir guardando más materias al Docente : " + nomina + " ? \n Si -> 1 No -> 0 ");
+						salir_materias = sc.nextInt();
+						
+						//if ternario
+						op_materias = salir_materias == 1 ? true : false;					
+						
+					}
+					break;
 				}
 				
 				case 2: {
-					
+					procesos_mate.getMaterias();
+					break;
+				}
+				
+				case 3 :{
+					sc.nextLine();
+					System.out.println("Que materia quieres eliminar");
+					materia = sc.nextLine();
+					procesos_mate.eliminarMaterias(materia);
+					break;
 				}
 			default:
 				throw new IllegalArgumentException("Unexpected value: " + op);
